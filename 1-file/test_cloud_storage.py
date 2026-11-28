@@ -2,9 +2,9 @@
 Tests por nivel para el ejercicio In-Memory Cloud Storage.
 
 Uso (funciona aunque los archivos sean .txt):
-    python test_cloud_storage.txt cloud_storage_inicio.py          # todos los niveles
-    python test_cloud_storage.txt cloud_storage_inicio.py --nivel 2 # solo hasta L2
-    python test_cloud_storage.txt cloud_storage_inicio.py -v        # muestra el detalle de cada fallo
+    python test_cloud_storage.txt cloud_storage_inicio-2.py          # todos los niveles
+    python test_cloud_storage.txt cloud_storage_inicio-2.py --nivel 2 # solo hasta L2
+    python test_cloud_storage.txt cloud_storage_inicio-2.py -v        # muestra el detalle de cada fallo
 
 Cada test crea una instancia nueva de CloudStorage.
 Un test que lanza una excepción (p. ej. método no implementado) cuenta como fallido.
@@ -318,7 +318,7 @@ def load_module(path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("path", nargs="?", default="cloud_storage_inicio.py")
+    parser.add_argument("path", nargs="?", default="cloud_storage_inicio-2.py")
     parser.add_argument("--nivel", type=int, default=4)
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args()

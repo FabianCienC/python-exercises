@@ -2,9 +2,9 @@
 Tests por nivel para el ejercicio Editor de texto.
 
 Uso (funciona aunque los archivos sean .txt):
-    python test_editor.txt editor_inicio.py              # todos los niveles
-    python test_editor.txt editor_inicio.py --nivel 2    # solo hasta L2
-    python test_editor.txt editor_inicio.py -v           # detalle de cada fallo
+    python test_editor.txt editor_inicio-2.py              # todos los niveles
+    python test_editor.txt editor_inicio-2.py --nivel 2    # solo hasta L2
+    python test_editor.txt editor_inicio-2.py -v           # detalle de cada fallo
 
 Cada test crea una instancia nueva de TextEditor.
 """
@@ -15,7 +15,7 @@ import importlib.util
 import sys
 import traceback
 
-DEFAULT_PATH = "editor_inicio.py"
+DEFAULT_PATH = "editor_inicio-2.py"
 CLASS_NAME = "TextEditor"
 TESTS = {1: [], 2: [], 3: [], 4: []}
 

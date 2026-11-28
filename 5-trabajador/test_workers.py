@@ -2,9 +2,9 @@
 Tests por nivel para el ejercicio Gestión de trabajadores.
 
 Uso (funciona aunque los archivos sean .txt):
-    python test_workers.txt workers_inicio.py              # todos los niveles
-    python test_workers.txt workers_inicio.py --nivel 2    # solo hasta L2
-    python test_workers.txt workers_inicio.py -v           # detalle de cada fallo
+    python test_workers.txt workers_inicio-2.py              # todos los niveles
+    python test_workers.txt workers_inicio-2.py --nivel 2    # solo hasta L2
+    python test_workers.txt workers_inicio-2.py -v           # detalle de cada fallo
 
 Cada test crea una instancia nueva de WorkerSystem.
 """
@@ -15,7 +15,7 @@ import importlib.util
 import sys
 import traceback
 
-DEFAULT_PATH = "workers_inicio.py"
+DEFAULT_PATH = "workers_inicio-2.py"
 CLASS_NAME = "WorkerSystem"
 TESTS = {1: [], 2: [], 3: [], 4: []}
 

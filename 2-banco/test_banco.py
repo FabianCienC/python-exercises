@@ -2,9 +2,9 @@
 Tests por nivel para el ejercicio Sistema bancario.
 
 Uso (funciona aunque los archivos sean .txt):
-    python test_banco.txt banco_inicio.py              # todos los niveles
-    python test_banco.txt banco_inicio.py --nivel 2    # solo hasta L2
-    python test_banco.txt banco_inicio.py -v           # detalle de cada fallo
+    python test_banco.txt banco_inicio-2.py              # todos los niveles
+    python test_banco.txt banco_inicio-2.py --nivel 2    # solo hasta L2
+    python test_banco.txt banco_inicio-2.py -v           # detalle de cada fallo
 
 Cada test crea una instancia nueva de Bank.
 """
@@ -282,7 +282,7 @@ def load_module(path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("path", nargs="?", default="banco_inicio.py")
+    parser.add_argument("path", nargs="?", default="banco_inicio-2.py")
     parser.add_argument("--nivel", type=int, default=4)
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args()
